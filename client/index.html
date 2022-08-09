@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>MoonSniper</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+  <div id="preview" class="preview">
+    <div style="display: none;"></div>
+    <div>
+      <div data-draggable="true" style="position: relative;">
+        <!---->
+        <!---->
+        <section draggable="false" class="overflow-hidden pt-0" data-v-271253ee="">
+          <section class="" style="padding-bottom: 1px;">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-2">
+              <!-- Container wrapper -->
+              <div class="container-fluid">
+                <div class="d-flex">
+                  
+                  <!-- Navbar brand --> <a class="navbar-brand ms-3"> 
+                     
+                      <img src="./img/moon-sniper-logo-text.png">
+                    </a>
+                </div> <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center"> <button type="button" class="btn   btn-link px-3 mb-1 me-2"
+                    aria-controls="#picker-editor"></button> <button type="button"
+                    class="btn btn-primary mb-1 me-lg-3" aria-controls="#picker-editor" onclick="startStopBot()">Start | Stop</button> </div>
+                <!-- Right elements -->
+              </div> <!-- Container wrapper -->
+            </nav> <!-- Navbar -->
+          </section>
+        </section>
+        <!---->
+      </div>
+      <div data-draggable="true" style="position: relative;">
+        <!---->
+        <!---->
+        <section draggable="false" class="container pt-5" data-v-271253ee="">
+          <section class="mb-10 text-center">
+            <style>
+              hr.divider-vertical {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 1px;
+                background-image: linear-gradient(180deg, transparent, hsl(0, 0%, 40%), transparent);
+                background-color: transparent;
+                height: 100%;
+              }
+            </style>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 position-relative"> <i
+                  class="fa fa-cog fa-3x text-primary mb-4" aria-controls="#picker-editor"></i>
+                  <!-- <div class="form-outline">
+                    <textarea id="config-area" class="form-control" id="textAreaExample" rows="4"></textarea>
+                  </div> -->
+
+                  <div id="editor" style="min-height:350px; max-height:350px"></div>
+
+              </div>
+              <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 position-relative"> <i
+                  class="fas fa-layer-group fa-3x text-primary mb-4" aria-controls="#picker-editor"></i>
+                  <div class="form-outline">
+                    <textarea class="form-control" disabled="true" style="min-height:350px; max-height:350px" id="activity-logger"></textarea>
+                  </div>
+              </div>
+            </div>
+          </section>
+        </section>
+    </div>
+  </div>
+
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/ace.js"></script>
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/ace.min.js" integrity="sha512-f6PeEZ6Ds5UUBNWpYA0ECDziSHlb7BHApwBk9kE40mdMPR5Iy9LkbFlFwQXajPxSQVB00klU43WLgAiToqFecQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/theme-monokai.min.js" integrity="sha512-wZYGbdk0giM73l8BLDNfSEziApAmH8DvXey6zNLG3QUgDeDsMAPm3FIdjhLwrGOWO0vdVHkVxeUzOBR0Hc/xBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/mode-json.min.js" integrity="sha512-YXUz04sMmhEPQR5FLg4/6MFWcrTzZRobwv6cEVWsX9bfos1lm/Z5hfVz4WB3Z3XyhcVjWWUOvudJ+CCxecDI7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/worker-json.min.js" integrity="sha512-rC0eN5w7amZ440Pxe6E+4PoKU/oMqfTjAcRdsiuDlFUzJoO/nLkuVQzRT+oWf58vbYA0a+oH+KzEaUj6w/gkHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.8.0/ext-beautify.min.js" integrity="sha512-uXfi0GwpQZcHIhGOMMHeNYtBSjt7qDXjXHmjShWSp+RWMSmjdy69N7M/pufinvQLv6rSYlpbSXqSnLRzWE952w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+<!-- <script> -->
+<!-- </script> -->
+
+  <!-- Custom scripts -->
+  <!-- <script type="text/javascript"></script> -->
+</body>
+
+</html>

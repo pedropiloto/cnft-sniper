@@ -1,0 +1,93 @@
+{
+    "name": "cnft-sniper",
+    "version": "1.0.3",
+    "description": "CNFT Sniper",
+    "main": "bin/client.js",
+    "scripts": {
+        "start": "node app/main.js",
+        "test": "jest",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "build": "esbuild dist/index.js --platform=node --bundle --minify --outfile=built/index.js",
+        "client": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pedropiloto/cnft-deal-tracker.git"
+    },
+    "keywords": [
+        "cnft"
+    ],
+    "author": "Pedro Piloto",
+    "license": "ISC",
+    "dependencies": {
+        "@blockfrost/blockfrost-js": "^4.1.0",
+        "@bugsnag/js": "^7.5.1",
+        "@emurgo/cardano-serialization-lib-nodejs": "^10.0.4",
+        "async-mutex": "^0.3.2",
+        "axios": "^0.21.1",
+        "bip39": "^3.0.4",
+        "body-parser": "^1.19.0",
+        "bottleneck": "^2.19.5",
+        "dotenv": "^8.2.0",
+        "electron-notarize": "^1.2.1",
+        "electron-reloader": "^1.2.3",
+        "electron-squirrel-startup": "^1.0.0",
+        "electron-store": "^8.0.2",
+        "moment": "^2.29.1",
+        "nexe": "^4.0.0-beta.19",
+        "node-fetch": "^3.2.3",
+        "node-ttl": "^0.2.0",
+        "pino": "^6.7.0",
+        "pino-pretty": "^4.3.0",
+        "webhook-discord": "^3.7.8",
+        "worker-nodes": "^2.4.0"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.64",
+        "@electron-forge/maker-deb": "^6.0.0-beta.64",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+        "@electron-forge/maker-zip": "^6.0.0-beta.64",
+        "bdd-lazy-var": "^2.6.0",
+        "electron": "^19.0.8",
+        "esbuild": "^0.14.38",
+        "eslint": "^8.14.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "jest": "^26.6.3",
+        "prettier": "^2.6.2"
+    },
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [
+                {
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "electron_test"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    }
+}

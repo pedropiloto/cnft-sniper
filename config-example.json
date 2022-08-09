@@ -1,0 +1,35 @@
+{
+    "rules": [
+        {
+            "name": "rule_ape_society",
+            "policy_id": "dac355946b4317530d9ec0cb142c63a4b624610786c2a32137d78e25",
+            "under_previous_collection_floor": 20,
+            "under_previous_rule_floor": 20,
+            "under_value": 450
+        },
+        {
+            "name": "cornucopia_land",
+            "policy_id": "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137",
+            "under_value": 200,
+            "traits_filter": {}
+        }
+    ],
+    "settings": {
+        "main_wallet": {
+            "name": "",
+            "seed_key": []
+        },
+        "cardano_submit_api_url": "http://192.168.1.200:8091/api/submit/tx",
+        "blockfrost_project_id": ""
+    },
+    "volume_wallets": [
+        {
+            "name": "wallet_1",
+            "seed_key": []
+        },
+        {
+            "name": "wallet_2",
+            "seed_key": []
+        }
+    ]
+}
