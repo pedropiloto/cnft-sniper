@@ -20,6 +20,8 @@
             "seed_key": []
         },
         "cardano_submit_api_url": "http://192.168.1.200:8091/api/submit/tx",
-        "blockfrost_project_id": ""
+        "blockfrost_project_id": "",
+        "test_mode": true,
+        "discord_webhook": ""
     }
 }
