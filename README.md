@@ -9,7 +9,7 @@ This is an open source Cardano NFT Sniper, it is compatible with jpg.store and f
 
 Feel free to contribute to this project with code, a follow on twitter or even a ☕️
 
-[!["Buy Me A Coffee"](https://i.imgur.com/ZEKLC7l.png)]([Twitter](https://twitter.com/cnftsniper_)) [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gbraad)
+[!["Twitter"](https://i.imgur.com/ZEKLC7l.png)](https://twitter.com/cnftsniper_) [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cnftsniper)
 
 # Setup
 
