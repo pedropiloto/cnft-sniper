@@ -1,15 +1,9 @@
 
 # Welcome to CNFT Sniper
 
-  
-
-This is an open source Cardano NFT Sniper, it is compatible with jpg.store and fully customizable using the concept of rules.
+This is a Cardano NFT Sniper, it is compatible with jpg.store and fully customizable using the concept of rules.
 
 ⚠️ This tool is able to sign transactions and buy assets on your behalf,  you may want to first test it with the `test_mode` setting enabled ⚠️
-
-Feel free to contribute to this project with code, a follow on twitter or even a ☕️
-
-[!["Twitter"](https://i.imgur.com/ZEKLC7l.png)](https://twitter.com/cnftsniper_) [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cnftsniper)
 
 # Setup
 
@@ -23,11 +17,7 @@ Both approaches need the following pre-requisites:
 
 - [Get a blockfrost key](https://blockfrost.io)
 
-  
-
 ## Command Line App
-
-  
 
 1. Install dependencies
 

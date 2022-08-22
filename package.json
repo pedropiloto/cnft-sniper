@@ -89,5 +89,11 @@
                 }
             ]
         }
+    },
+    "build": {
+        "directories": {
+            "output": "dist/${version}/${os}"
+        },
+        "afterSign": "./afterSignHook.js"
     }
 }
