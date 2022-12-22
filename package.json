@@ -94,6 +94,6 @@
         "directories": {
             "output": "dist/${version}/${os}"
         },
-        "afterSign": "./afterSignHook.js"
+        "afterSign": "./after-sign-hook.js"
     }
 }

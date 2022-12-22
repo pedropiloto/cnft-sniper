@@ -1,4 +1,4 @@
-// "afterSign": "./afterSignHook.js",
+// "afterSign": "./after-sign-hook.js",
 
 require('dotenv').config();
 const fs = require('fs');
